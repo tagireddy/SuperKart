@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 7860
 
-CMD ["python", "backend_files/app.py"]
+CMD ["python", "app.py"]

@@ -4,7 +4,7 @@ import pandas as pd
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-MODEL_PATH = os.path.join(os.getcwd(), "backend_files", "superkart_model.joblib")
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "superkart_model.joblib")
 model = joblib.load(MODEL_PATH)
 
 FEATURE_COLUMNS = [
